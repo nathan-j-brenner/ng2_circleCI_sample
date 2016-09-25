@@ -1,12 +1,13 @@
 {
   "name": "ng2-circle-ci-sample",
+  "author": "Nathan Brenner <nathan@mercenarytech.com>",
   "version": "0.0.0",
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
     "start": "ng serve",
     "lint": "tslint \"src/**/*.ts\"",
-    "test": "ng test",
+    "test": "ng test --watch=false",
     "pree2e": "webdriver-manager update",
     "e2e": "protractor"
   },
@@ -40,5 +41,6 @@
     "ts-node": "1.2.1",
     "tslint": "3.13.0",
     "typescript": "2.0.2"
-  }
+  },
+  "engine": "node 6.6.0"
 }
