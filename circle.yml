@@ -4,4 +4,5 @@ machine:
 
 test:
   override:
-    - timeout 30s npm run -s test || npm run -s test
+    - npm test:
+      timeout: 30
